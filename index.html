@@ -16,6 +16,8 @@
         <!-- For syntax highlighting -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
 
+		<style>#sessions li {border-bottom: 1px solid;}</style>
+		
         <!-- If the query includes 'print-pdf', include the PDF print sheet -->
         <script>
             if( window.location.search.match( /print-pdf/gi ) ) {
@@ -41,6 +43,7 @@
     <section>
 
         <h1>FOSS4G Conference in Review</h1>
+	<p>Andrew Murdoch, Leidos</p>
         <p>Josh Sisskind, Leidos</p>
 		<img src="img/foss4g.png" >
 
@@ -50,9 +53,9 @@
 	
     <h2>What is FOSS4G</h2>
     <ul>
-      <li class="fragment">Free and Open Source Software for Geospatial</li>
-      <li class="fragment">PDX 2014 was 10th Annual International FOSS4G Conference</li>
-      <li class="fragment">Future Conferences</li>
+      <li>Free and Open Source Software for Geospatial</li>
+      <li>PDX 2014 was 10th Annual International FOSS4G Conference</li>
+      <li>Future Conferences</li>
 		<ul>
 			<li><a href='https://2015.foss4g-na.org/'>North American Conference</a>: San Francisco, March 2015</li>
 			<li><a href='http://foss4g2015.wordpress.com/'>International</a>: Seoul, September 2015</li>
@@ -79,67 +82,291 @@
 	<section>
 	<h2>Keynotes</h2>
     <ul>
-      <li class="fragment"><a href='http://bost.ocks.org/mike/'>Mike</a> <a href='https://github.com/mbostock'>Bostock</a>, The New York Times
+      <li><a href='http://bost.ocks.org/mike/'>Mike</a> <a href='https://github.com/mbostock'>Bostock</a>, The New York Times
 		<ul>
-			<li class="fragment">Keynote: <a href='http://vimeo.com/106198518'>“The Toolmaker’s Guide”</a></li>
-			<li class="fragment">D3.js, TopoJSON, etc., etc., etc.</li>
+			<li>Keynote: <a href='http://vimeo.com/106198518'>“The Toolmaker’s Guide”</a></li>
+			<li>D3.js, TopoJSON, etc., etc., etc.</li>
+			<li>Discussion of color spaces used to accurately represent ranked or continuous data (HueHelix vs HCL vs RGB)</li>
 		</ul>
 	  </li>
-      <li class="fragment"><a href='http://sarahnovotny.com/'>Sarah Novotny</a>, NGINX
+      <li><a href='http://sarahnovotny.com/'>Sarah Novotny</a>, NGINX
 		<ul>
-			<li class="fragment">Keynote: <a href='http://vimeo.com/106204695'>“Open Source is People”</a></li>
-			<li class="fragment"><a href='Choosealicense.com'>choosealicense.com</a></li>
+			<li>Keynote: <a href='http://vimeo.com/106204695'>“Open Source is People”</a></li>
+			<li><a href='Choosealicense.com'>choosealicense.com</a></li>
 		</ul>
 	  </li>
-      <li class="fragment"><a href='http://www.propublica.org/site/author/al_shaw'>Al Shaw</a>, Pro Publica
+      <li><a href='http://www.propublica.org/site/author/al_shaw'>Al Shaw</a>, Pro Publica
 		<ul>
-			<li class="fragment">Keynote: <a href='http://vimeo.com/106204204'>“Mapping for Investigations”</a></li>
+			<li>Keynote: <a href='http://vimeo.com/106204204'>“Mapping for Investigations”</a></li>
+			<li>Detecting Gerrymandering - shape is only one factor, internal demographics more telling</li>
+			<li>Maps for Journalism - simple is better to focus on the information of interest</li>
+			<li>Louisiana coastline loss - pipelines, dredge canals, levees and spillways destroying marshland and coastlines and a way of life over 100 years</li>
+
 		</ul>
 	  </li>	  
     </ul>
     </section>
 	
 	<section>
-	<h2>Workshops</h2>
-    <ul>
-      <li>Enterprise Class Deployment for GeoServer and GeoWebcache</li>	  
-	  <li>The Accidental DBA</li>
-	  <li>Leaflet and Mapbox JavaScript API Fundamentals</li>
-    </ul>
-    </section>	
-	
-	<section>
+		<section><h2>Workshops</h2></section>
 		<section>
-		<h2>Sessions</h2>
-		<ul style="columns:4;font-size:14pt;-webkit-columns:4;-moz-columns:4;list-style:none;text-align:center;">
-			<li>Fiona and Rasterio</li>
-			<li>A GeoNode Primer</li>
-			<li>GeoNetwork OpenSource 3.0</li>				
-			<li>Getting Started with OpenLayers 3</li>
-			<li>Evaluation of WPS Frameworks</li>
-			<li>Writing Better <a href='http://postgis.us/presentations'>PostGIS Queries</a></li>			
-			<li>GIS in the Browser</li>
-			<li><a href='http://boundlessgeo.com/wp-content/uploads/2013/10/postgis-frenzy-foss4g-2013.pdf'>PostGIS Feature Frenzy</a></li>
-			<li>Creating Custom HTML Elements for Maps</li>
-			<li>Mapping it out with AngularJS</li>
-			<li>Fixing GIS Data Discovery</li>
-			<li><a href='http://ryanjarvinen.com/presentations/foss4g-adventures-in-mapping/#/'>Open Source Spatial</a> on <a href='https://www.openshift.com/'>Open Shift</a></li>
-			<li>Finding the Where in Big Fuzzy Data</li>			
-			<li><a href='https://github.com/mapbox/vector-tile-spec'>Vector Tiles</a> for Fast Custom Maps</li>
-			<li>Open Source Spatial on OpenShift</li>
-			<li>Building Development Environments Using Vagrant</li>				
-			<li>An Open Source Approach to Communicating Weather Risks</li>
-			<li>The Role of FOSS4G as a Component of Hybrid Systems</li>				
-			<li>Server-side Marker Clustering For Rapid Display of Large Datasets</li>				
-			<li>Mapping Words and Phrases from Geographic Knowledge on the Web</li>		
-			<li><a href='http://erinhamilton.me/portfolio/Erin_Hamilton_Masters_Thesis.pdf'>Client-side vs. Server-side GeoProcessing: Benchmarking the Browser</a></li>
-			<li>Combining Geometry and Key-Value Stores Using PostGIS and <a href='http://www.postgresql.org/docs/9.1/static/hstore.html'>HStore</a></li>
-			<li>Building Open Source Projects in the Government ESRI Ecosystem</li>					
-			<li>Terrafomer – Open Source Geometry in Your Browser and Node.js</li>				
-			<li><a href='http://calvinmetcalf.github.io/projections-in-web-browsers-are-terrible-and-you-should-be-ashamed-of-yourself/#0'>Projections in Web Browsers Are Terrible and You Should Be Ashamed of Yourself</a></li>
-			<li>Tuning Open Source GIS Tools to Support Weather Data/Rapidly Changing Rasters</li>				
+		<h2>Workshops</h2>
+		<ul>
+		  <li>Building apps with OpenLayers 3</li>	  
+		  <ul>
+			<li>Building a census data viewer app using PostgreSQL/PostGIS, GeoServer and OL3</li>
+			<li><a href='http://workshops.boundlessgeo.com/tutorial-censusmap/'>http://workshops.boundlessgeo.com/tutorial-censusmap/</a></li>
+			<li><a href='http://openlayers.org/ol3-workshop/'>http://openlayers.org/ol3-workshop/</a></li>
+		   </ul>
+		  <li>A standard geo-spatial stack in the clouds</li>
+		  <ul>
+		  <li>Deploying a free (with some size limits) cloud-based instance of PostgreSQL/PostGIS and GeoServer in RedHat’s online hosting service (OpenShift) served on Linux machines.  Provided instructions for consuming the hosted GIS data and services on your local machine using the QGIS desktop client.
+			<ul><li><a href='https://www.openshift.com/'>https://www.openshift.com/</a></li><li>Presentation notes to follow</li></ul>
 		</ul>
 		</section>
+		<section>
+		<h2>Workshops</h2>
+		<ul>
+		  <li>Enterprise Class Deployment for GeoServer and GeoWebcache</li>	  
+		  <li>The Accidental DBA</li>
+		  <li>Leaflet and Mapbox JavaScript API Fundamentals</li>
+		</ul>
+		</section>	
+	</section>
+	
+	<section> 
+		<section><h2>Sessions</h2></section>
+		<section>
+			<h2>Sessions</h2>
+			<ul id="sessions" style="columns:4;font-size:14pt;-webkit-columns:4;-moz-columns:4;list-style:none;text-align:center;">
+				<li>Fiona and Rasterio</li>
+				<li>A GeoNode Primer</li>
+				<li>GeoNetwork OpenSource 3.0</li>				
+				<li>Getting Started with OpenLayers 3</li>
+				<li>Evaluation of WPS Frameworks</li>
+				<li>Writing Better <a href='http://postgis.us/presentations'>PostGIS Queries</a></li>			
+				<li>GIS in the Browser</li>
+				<li><a href='http://boundlessgeo.com/wp-content/uploads/2013/10/postgis-frenzy-foss4g-2013.pdf'>PostGIS Feature Frenzy</a></li>
+				<li>Creating Custom HTML Elements for Maps</li>
+				<li>Mapping it out with AngularJS</li>
+				<li>Fixing GIS Data Discovery</li>
+				<li><a href='http://ryanjarvinen.com/presentations/foss4g-adventures-in-mapping/#/'>Open Source Spatial</a> on <a href='https://www.openshift.com/'>Open Shift</a></li>
+				<li>Finding the Where in Big Fuzzy Data</li>			
+				<li><a href='https://github.com/mapbox/vector-tile-spec'>Vector Tiles</a> for Fast Custom Maps</li>
+				<li>Open Source Spatial on OpenShift</li>
+				<li>Building Development Environments Using Vagrant</li>				
+				<li>An Open Source Approach to Communicating Weather Risks</li>
+				<li>The Role of FOSS4G as a Component of Hybrid Systems</li>				
+				<li>Server-side Marker Clustering For Rapid Display of Large Datasets</li>				
+				<li>Mapping Words and Phrases from Geographic Knowledge on the Web</li>		
+				<li><a href='http://erinhamilton.me/portfolio/Erin_Hamilton_Masters_Thesis.pdf'>Client-side vs. Server-side GeoProcessing: Benchmarking the Browser</a></li>
+				<li>Combining Geometry and Key-Value Stores Using PostGIS and <a href='http://www.postgresql.org/docs/9.1/static/hstore.html'>HStore</a></li>
+				<li>Building Open Source Projects in the Government ESRI Ecosystem</li>					
+				<li>Terrafomer – Open Source Geometry in Your Browser and Node.js</li>				
+				<li><a href='http://calvinmetcalf.github.io/projections-in-web-browsers-are-terrible-and-you-should-be-ashamed-of-yourself/#0'>Projections in Web Browsers Are Terrible and You Should Be Ashamed of Yourself</a></li>
+				<li>Tuning Open Source GIS Tools to Support Weather Data/Rapidly Changing Rasters</li>				
+			</ul>
+		</section>
+	</section>
+	
+	<section> <!-- Andrew -->
+		<section><h2>Andrew's Sessions</h2></section>
+		<section>
+			<h2>Tell stories and engage an audience with maps</h2>
+			<ul>
+				<li>presentation from CartoDB</li>
+				<li>Global Forest Watch <a href='http://www.globalforestwatch.org/'>example</a></li>
+				<li>Using torque.js library for time dimension data on <a href='https://github.com/CartoDB/torque'>Github</a></li>
+				<li>"Eric the bird" <a href='http://blog.cartodb.com/mapping-the-the-life-of-eric-the-seagull/'>example</a>  </li>
+				<li>Articles in Wired referring to CartoDB and climate change</li>
+					<ul><li><a href='http://www.wired.com/2013/12/the-best-maps-of-2013/'>Best Maps of 2013</a></li><li><a href='http://www.wired.com/2014/09/bird-map-climate-change/'>Bird Map Climate Change</a></li></ul>
+				<li>Development of <a href='http://cartodb.github.io/odyssey.js/'>oddysey.js</a> for journalist applications</li>
+				<li>lots of overlap with ArcGIS Online but better integration with GitHub
+			</ul>
+		</section>
+		<section>
+			<h2>Manager's guide to PostGIS</h2>
+				<p>general overview comparing Oracle spatial to PostGIS</p>
+				<p>versioning handled by GeoGig / PostGIS / desktop client (QGIS/ArcMap/etc.)</p>
+		</section>
+		<section>
+			<h2>Update on new OGC standards: Geopackage & OWS Context</h2>
+			<ul>
+				<li>Geopackage uses SQLite to store vector data using the simple features SQL spec</li>
+				<li>stores raster data using the MBTiles spec in BLOB columns with tiling optional</li>
+				<li>all OGC specs are now on Github as well as test suites for compliance.</li>
+				<li>OWS context uses an atom feed passing georss data with links, references to spatial and non-spatial data</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Empowering people, popularizing open source and building a business</h2>
+			<ul>
+				<li>examples of <a href='https://github.com/CartoDB/torque'>torque.js</a> for time dimension vector features</li>
+				<li>point animation for Google Maps or Leaflet</li>
+				<li>uses CartoCSS and Canvas 2D</li>
+				<li>concept of tilecube (X,Y,Time)</li>
+				<li>based on Postgres and Node.js on the server</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Supporting Open Data with Open Source</h2>
+			<ul>
+				<li>NOAA project</li>
+				<li>uses data.json metadata exchange format (US Government standard)</li>
+				<li>transfers metadata / links / references</li>
+				<li>uses CKAN web api</li>
+				<li>examples include:  data.noaa.gov and data.gov</li>
+				<li>based on stack of GeoServer, GeoNode and CKAN</li>
+				<li>GeoNode for data discovery</li>
+				<li>CS-W catalog services for QGIS and ArcGIS</li>
+				<li>Remote Services and GeoGig versioned editing using distributed data and MapLoom (as an editor for GeoGig)</li>
+			</ul>
+		</section>
+		<section>
+			<h2><a href='http://grass.osgeo.org'>GRASS GIS 7</a>: Your reliable geospatial number cruncher</h2>
+			<ul>
+				<li>network analysis</li>
+				<li>image processing</li>
+				<li>hydro modeling</li>
+				<li>python api</li>
+				<li>integration with QGIS for better GUI</li>
+				<li>formats out include: geotiff and shapefile</li>
+				<li>formats in include: PostGIS and WFS</li>
+				<li>uses WPS with pyWPS web processing service</li>
+				<li>3d animation</li>
+				<li>well documented</li>
+				<li>georeferencing imagery</li>
+				<li>image classications</li>
+				<li>space-time cubes storing temporal data</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Developing OpenLayers-based mobile applications</h2>
+			<ul>
+				<li>part of <a href='https://github.com/ROGUE-JCTD'>ROGUE-JCTD</a> demo project</li>
+				<li>three apps iteratively developed with Open Layers at the core for mobile</li>
+				<li>PushPin Cross Platform with OL3</li>
+				<li>uses GeoShape / GeoGig for disconnected editing</li>
+				<li>app is called Arbiter and handles offline editing and sync using WFS-T (last edit wins)</li>
+				<li>uses PhoneGap plugins</li>
+				<li>compares spatial networks <a href='https://itunes.apple.com/us/app/pushpin-osm/id565850639?mt=8'>IOS app</a> to Rogue / Arbiter pushpin cross platform web app.</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Glob3 Mobile (Mobile Map Tools)</h2>
+			<ul>
+				<li><a href='https://github.com/glob3mobile/mmt-vector-tiles'>Github</a></li>
+				<li>Converter to native app code</li>
+				<li>MMT project on github</li>
+				<li>displays 3d models on mobile</li>
+				<li>displays pointclouds in BerkelyDB</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Web and Mobile Enterprise Applications</h2>
+			<ul>
+				<li><a href='http://ubisensemyworld.com/'>Ubisense</a> (Peter Batty) presentation</li>
+				<li>distributed off-line editing</li>
+				<li>utility and telecom space</li>
+				<li>originally worked wth PostGIS and Mapfish with Google Maps frontend</li>
+				<li>now works with PostGIS, Geoserver and Leaflet</li>
+				<li>app called "myWorld“</li>
+				<li>mobile uses PhoneGap with SQLite database to compile "native" apps on ios and android</li>
+				<li>challenges to HTML5 application include Large Local Storage using HTML5 offline storage</li>
+				<li>option to go "low-tech" with fieldpapers.com</li>
+			</ul>
+		</section>	
+		<section>
+			<h2>A GeoNode Primer</h2>
+			<ul>
+				<li><a href='http://demo.geonode.org/'>Demo</a></li>
+				<li>built-in metadata editor</li>
+				<li>built on Django</li>
+				<li>hosted on github</li>
+				<li>spatial and non-spatial data uploaded by users.  </li>
+				<li>content-management system with cross-links (like JIRA or FogBugz for data)</li>
+				<li>data catalog search functions and filters</li>
+				<li>user manager / permissions?</li>
+				<li>Examples:	
+				<ul><li>World Food Network </li><li>MapStory</li><li>Harvard World Map</li><li>NEPAnode - GeoSHAPE (GeoGit / MapLoom / Mobile interface)</li></ul>
+			</ul>
+		</section>	
+		<section>
+			<h3>Quadcopter GIS for less than $700 - hardware and software to map your local community</h3>
+			<ul>
+				<li>Just for fun!</li>
+				<li>Phantom quadcopter ($500)</li>
+				<li>Canon ELPH camera ($110)</li>
+				<li>uses Canon CHDK developer kit to create interval shutter operation</li>
+				<li>flied manually (no auto-flight plan ability)</li>
+				<li>software to stitch imagery back together:</li>
+				<ul><li>Microsoft ICE (based on photosynth)</li>
+				<li>AgiSoft Photoscan (not open and not free)</li>
+				<li>Visual SFM (open source)</li></ul>
+				<li>once you have a mosaic you can georeference in desktop software (QGIS warper or <a href='mapknitter.com'>mapknitter.com</a>)</li>
+				<li>you can use gdal2tiles to create a tiled mosaic from the source mosaic</li>
+				<li>add to OSM using ideditor.com</li>
+				<li>create 3d models from sparse point cloud using AgiSoft Photoscan or Visual SFM and Meshlab</li>
+			</ul>
+		</section>	
+		<section>
+			<h2>GeoTools, GeoServer, GeoGit: A case study of use in utility field work</h2>
+			<ul>
+				<li>GeoGit now is GeoGig which handles versioning and history</li>
+				<li>based on GeoTools using Java</li>
+				<li>Alternative to GitHub.io pages w/ GeoJSON which may be better for less complex editing scenarios</li>
+				<li>possible example of GitHub.io in Landon Reed's presentation on distributed editing</li>
+				<li>Does not handle visualization: SLDs vs. CartoCSS using CSS Geoserver plugin</li>
+			</ul>
+		</section>	
+		<section>			
+			<h2>Distributed versioned Editing in Action</h2>
+			<ul>
+				<li>GeoGit now is GeoGig which handles versioning and history</li>
+				<li>based on GeoTools using Java</li>
+				<li>Alternative to GitHub.io pages w/ GeoJSON which may be better for less complex editing scenarios</li>
+				<li>possible example of GitHub.io in Landon Reed's presentation on distributed editing</li>
+				<li>Does not handle visualization: SLDs vs. CartoCSS using CSS Geoserver plugin</li>
+			</ul>
+		</section>	
+		<section>			
+			<h2>Open Source, Open Standards and 50 Lines of Code: A look behind GitHub's GeoJSON rendering and diffing</h2>
+			<ul>
+				<li>GeoGit now is GeoGig which handles versioning and history</li>
+				<li>based on GeoTools using Java</li>
+				<li>Alternative to GitHub.io pages w/ GeoJSON which may be better for less complex editing scenarios</li>
+				<li>possible example of GitHub.io in Landon Reed's presentation on distributed editing</li>
+				<li>Does not handle visualization: SLDs vs. CartoCSS using CSS Geoserver plugin</li>
+			</ul>
+		</section>
+		<section>
+			<h2>MapLoom: A new web-client with versioned editing (GeoGit) integration</h2>
+			<ul>
+			<li>project called ROGUE developed as a Joint Technology Demonstration with DoD partners as well as State Department.  </li>
+			<li><a href='https://github.com/ROGUE-JCTD'>Rogue-jctd on GitHub</a></li>
+			<li>MapLoom is their web-based editor interface plugged in to GeoNode for editing GeoGig enabled PostGIS data sources.  </li>
+			<li>Supports viewing versions and history for different editors</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Projections in Web Browsers are terrible and you should be ashamed of yourself</h2>
+			<ul>
+			<li>refers to Adaptive Composite Map Projections (Bernhard Jenny) which is a very cool interactive <a href='http://cartography.oregonstate.edu/demos/AdaptiveCompositeMapProjections/'>demo</a></li>
+			<li>rant against use of hundreds of state plane coordinate systems and multiple projection and coordinate systems world-wide when for most use-cases, there is no need for that level of complexity.</li>
+			<li>discussion of the biases inherent in WGS84 Web Mercator system.  </li>
+			</ul>
+		</section>
+		<section>
+			<h2>GRASS GIS, Star Trek and Old Video Tape - A reference case on audiovisual preservation for the OSGeo community</h2>
+			<p>
+				<a href='https://av.getinfo.de/media/12963?5'>GRASS GIS promo video from 1987</a> <p>(narrated by William Shatner!)</p>
+			</p>
+		</section>
+	</section>
+	
+	
+	<section> <!-- Josh -->
+		<section><h2>Josh's Sessions</h2></section>
 		
 		<section>
 			<h2><a href='http://sgillies.github.io/foss4g-2014-fiona-rasterio/#/'>Fiona and Rasterio</a></h2>
@@ -235,11 +462,13 @@ Terraformer.point()
 				
 	</section>	
 
+
 	<section>
 		<iframe width='100%' height='600px' frameBorder='0' src='http://sisskind.github.io/pdx-map/'></iframe>
 	</section>
 	
     <section>
+    
         <h2>THE END</h2>
     </section>
 
