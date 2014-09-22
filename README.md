@@ -1,12 +1,8 @@
 ==================
-Fiona and Rasterio
+FOSS4G 2014 Update
 ==================
 
-Data Access for Python Programmers and Future Python Programmers
+Recap of FOSS4G Conference in Portland.
 
-Talk for FOSS4G 2014.
+Thanks to Sean Gillies for the [reveal.js]https://github.com/hakimel/reveal.js template.
 
-Format: 20 mins + 5 for questions.
-
-There are notes inline. I intend to format them better and incorporate
-audience questions and feedback.
