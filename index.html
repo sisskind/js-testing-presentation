@@ -328,6 +328,81 @@ end
 			</section>
     </section>
     <section>
+    	<section><h2>Running Tests on MapEdit and Hootenanny</h2></section>
+    	<section>
+    		<h3>MapEdit</h3>
+    		<pre><code data-trim>
+$: ~/mapedit-id$ npm test
+iD@1.8.5 test /home/jsisskind/mapedit-id
+eslint js/id && mocha-phantomjs test/index.html --ssl-protocol=tlsv1 && make && mocha-phantomjs test/index_packaged.html --ssl-protocol=tlsv1
+			</code></pre>
+			<br>
+			<h4>This runs the entire node test suite, including eslint and mocha (with phantomJS).</h4>
+		</section>
+		<section>
+		<h3>Result</h3>
+			<pre><code data-trim>
+/home/jsisskind/mapedit-id/js/id/actions/change_preset.js
+10:2   error  Mixed spaces and tabs                         no-mixed-spaces-and-tabs				  
+11:2   error  Mixed spaces and tabs                         no-mixed-spaces-and-tabs
+12:2   error  Mixed spaces and tabs                         no-mixed-spaces-and-tabs
+13:2   error  Mixed spaces and tabs                         no-mixed-spaces-and-tabs
+13:11  error  Unexpected console statement                  no-console
+14:17  error  Unexpected console statement                  no-console
+15:2   error  Mixed spaces and tabs                         no-mixed-spaces-and-tabs
+16:2   error  Mixed spaces and tabs                         no-mixed-spaces-and-tabs
+17:2   error  Mixed spaces and tabs                         no-mixed-spaces-and-tabs
+18:2   error  Mixed spaces and tabs                         no-mixed-spaces-and-tabs
+18:11  error  ["source"] is better written in dot notation  dot-notation
+20:2   error  Mixed spaces and tabs                         no-mixed-spaces-and-tabs
+22:2   error  Mixed spaces and tabs                         no-mixed-spaces-and-tabs
+24:10  error  Unnecessary semicolon                         no-extra-semi
+
+/home/jsisskind/mapedit-id/js/id/id.js
+1:20  error  Strings must use singlequote  quotes
+2:18  error  Strings must use singlequote  quotes
+
+/home/jsisskind/mapedit-id/js/id/renderer/geojson_layer.js
+19:13   error  Strings must use singlequote  quotes
+19:48   error  Strings must use singlequote  quotes
+20:13   error  Strings must use singlequote  quotes
+20:56   error  Strings must use singlequote  quotes
+21:13   error  Strings must use singlequote  quotes
+21:54   error  Strings must use singlequote  quotes
+22:13   error  Strings must use singlequote  quotes
+22:68   error  Strings must use singlequote  quotes
+23:13   error  Strings must use singlequote  quotes
+23:69   error  Strings must use singlequote  quotes
+23:110  error  Strings must use singlequote  quotes
+24:13   error  Strings must use singlequote  quotes
+24:55   error  Strings must use singlequote  quotes
+24:78   error  Strings must use singlequote  quotes
+131:50   error  Missing semicolon             semi
+
+/home/jsisskind/mapedit-id/js/id/services/taginfo.js
+113:43  error  Expected '===' and instead saw '=='  eqeqeq
+113:45  error  Strings must use singlequote         quotes
+122:50  error  Strings must use singlequote         quotes
+122:64  error  Strings must use singlequote         quotes
+125:95  error  Missing semicolon                    semi
+126:67  error  Strings must use singlequote         quotes
+
+/home/jsisskind/mapedit-id/js/id/ui/dgcarousel.js
+245:55  error  Strings must use singlequote  quotes
+
+✖ 38 problems (38 errors, 0 warnings)
+
+npm ERR! Test failed.  See above for more details.
+    		</code></pre>
+		</section>
+		<section>
+		<h3>Hootenanny</h3>
+		<pre><code data-trime>make test</code></pre>
+		<br>
+		<pre><code data-trim>xvfb-run --server-args="-screen 0, 1024x768x24" cucumber --format pretty --strict features/osm_tds_switcher.feature</code></pre>
+		</section>
+    </section>
+    <section>
     	<h2>What's Next?</h2>
     	<ul>
     		<li>Requirement to meet 80% code coverage.</li>
